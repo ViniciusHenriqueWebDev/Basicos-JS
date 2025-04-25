@@ -1,0 +1,1 @@
+## Execute npm install em cada pasta
