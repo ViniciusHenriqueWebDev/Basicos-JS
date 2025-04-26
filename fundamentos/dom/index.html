@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .destacado {
+            background-color: yellow;
+            padding: 5px;
+        }
+        .concluido {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .secao {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo-principal">Manipulação do DOM</h1>
+    
+    <div class="secao" id="secao1">
+        <h2>1. Selecionando Elementos</h2>
+        <p id="paragrafo1" class="texto">Este é o primeiro parágrafo (tem ID).</p>
+        <p class="texto">Este é o segundo parágrafo (tem classe).</p>
+        <p>Este é o terceiro parágrafo (sem classe ou ID).</p>
+        <button id="btn-selecionar">Selecionar Elementos</button>
+        <div id="resultado-selecao"></div>
+    </div>
+
+    <div class="secao" id="secao2">
+        <h2>2. Modificando Conteúdo e Estilos</h2>
+        <p id="paragrafo-modificavel">Este texto será modificado.</p>
+        <button id="btn-modificar-texto">Modificar Texto</button>
+        <button id="btn-modificar-html">Adicionar HTML</button>
+        <button id="btn-modificar-estilo">Modificar Estilo</button>
+    </div>
+    
+    <div class="secao" id="secao3">
+        <h2>3. Trabalhando com Classes CSS</h2>
+        <p id="paragrafo-classes">Este parágrafo terá suas classes manipuladas.</p>
+        <button id="btn-adicionar-classe">Adicionar Classe</button>
+        <button id="btn-remover-classe">Remover Classe</button>
+        <button id="btn-alternar-classe">Alternar Classe</button>
+    </div>
+    <div class="secao" id="secao4">
+        <h2>4. Criando e Removendo Elementos</h2>
+        <div id="container-elementos"></div>
+        <button id="btn-criar">Criar Elemento</button>
+        <button id="btn-remover">Remover Último</button>
+    </div>
+    
+    <!-- Vamos adicionar mais seções conforme avançamos -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
